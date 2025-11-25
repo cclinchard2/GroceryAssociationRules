@@ -27,31 +27,6 @@ header .intro-text {
 }
 
 /* =============================
-   SUMMARY
-============================= */
-.summary {
-  font-style: italic;        /* Italics */
-  text-align: center;        /* Center the summary block */
-  margin: 2rem auto;         /* Space around it */
-  max-width: 800px;          /* Limit width for readability */
-  color: #555;               /* Match header text color */
-}
-
-.summary ul {
-  list-style-position: inside; /* Keep bullets inside */
-  padding-left: 0;             /* Remove default indent */
-  display: inline-block;       /* Shrink to fit content and center */
-  text-align: left;            /* Keep bullets left-aligned */
-  margin-top: 10px;
-}
-
-.summary li {
-  margin-bottom: 0.5rem;       /* Space between bullet points */
-  font-style: normal;           /* Keep bullets upright (not italic) */
-}
-
-
-/* =============================
    PROJECT GRID
 ============================= */
 .project-grid {
@@ -136,4 +111,27 @@ header .intro-text {
   background: linear-gradient(135deg, #ff4d80, #ff79a8); /* hover gradient */
 }
 
+/* =============================
+   SUMMARY
+============================= */
+header + .summary {
+  font-style: italic;        /* Italics */
+  text-align: center;        /* Center the summary text */
+  margin: 2rem auto;         /* Space around it */
+  max-width: 800px;          /* Limit width for readability */
+  color: #555;               /* Match header text color */
+}
+
+header + .summary ul {
+  list-style-position: inside; /* Keep bullets inside */
+  padding-left: 0;             /* Remove default indent */
+  display: inline-block;       /* Shrink block to fit content */
+  text-align: left;            /* Keep bullets left-aligned */
+  margin-top: 10px;
+}
+
+header + .summary li {
+  margin-bottom: 0.5rem;      /* Space between bullets */
+  font-style: normal;          /* Keep bullets upright */
+}
 
